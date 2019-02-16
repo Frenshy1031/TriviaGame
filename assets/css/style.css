@@ -1,0 +1,35 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background: no-repeat center center fixed;
+    background-size: cover;
+   
+    
+    
+}
+
+h1 {
+	
+	font-size: 70px;
+	color: orange;
+    text-align: center;
+    height: 80;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Marck Script', cursive;
+    
+}
+.jumbotron-fluid{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    
+}
+option btn btn-outline-secondary{
+    text-align: center;
+    font-size: 80px;
+    color: green;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Marck Script', cursive;
+}
