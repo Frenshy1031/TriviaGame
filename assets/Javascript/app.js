@@ -3,8 +3,8 @@ $(document).ready(function(){
     $("#start").on('click', trivia.startGame);
     $(document).on('click' , '.option', trivia.guessChecker);
     
-  })
-  
+  })	
+
   var trivia = {
    
     correct: 0,
@@ -19,28 +19,40 @@ $(document).ready(function(){
       q1: 'Which of these is NOT a name of one of the Spice Girls?',
       q2: 'What year were CDs first introduced in America?',
       q3: 'Which future "Friends" star did Bruce Springsteen pull up on stage in one of his music videos?',
-      q4: '?',
-      q5: "?",
-      q6: '?',
-      q7: "?"
+      q4: 'When was Elvis’ first ever concert?',
+      q5: "Which country is Gangnam Style from?",
+      q6: 'Which mathematical symbol is not the name of an Ed Sheeran album',
+      q7: "Which Beatle performed a James Bond theme song?",
+      q8: "Complete the Rihanna lyric: We found love in a....?",
+      q9: "In which video does Michael Jackson play a zombie?",
+      q10: "Which of these is NOT a Whitney Houston song?"
+
     },
     options: {
       q1: ['Sporty Spice', 'Adrianna Grande Spice', 'Scary Spice', 'Posh Spice'],
       q2: ['1982', '1983', '1984', '1985'],
       q3: ['Courteney Cox','Jennifer Aniston', 'Matt LeBlanc','David Schwimmer'],
-      q4: ['', '', '', ''],
-      q5: ['','','',''],
-      q6: ['','','',''],
-      q7: ['', '', '','']
+      q4: ['1954', '1964', '1950', '1980'],
+      q5: ['North Korea','Japan','China','South Korea'],
+      q6: ['Plus','Divide','Subtract','Multiply'],
+      q7: ['John', 'George Harrison', 'Paul McCartney','Ringo Starr'],
+      q8: ['Dangerous place', 'Deadly place','Hopeless place', 'Ravaged place' ],
+      q9: ['Bad','Speed Demon','Beat it', 'Thriller'],
+      q10:['I wanna Dance with Somebody','Time After Time','Greatest Love of all','Time After Time']
+
     },
     answers: {
       q1: 'Adrianna Grande Spice',
       q2: '1983',
       q3: 'Courteney Cox',
-      q4: '',
-      q5: '',
-      q6: '',
-      q7: ''
+      q4: '1954',
+      q5: 'South Korea',
+      q6: 'Subtract',
+      q7: 'Paul McCartney',
+      q8: 'Hopeless place',
+      q9: 'Thriller',
+      q10: 'Time After Time'
+
     },
    
     startGame: function(){
@@ -112,7 +124,7 @@ $(document).ready(function(){
         
     
         $('#results')
-          .html('<h3>Thank you for playing!</h3>'+
+          .html('<h4>Thank you for playing!</h4>'+
           '<p>Correct: '+ trivia.correct +'</p>'+
           '<p>Incorrect: '+ trivia.incorrect +'</p>'+
           '<p>Unaswered: '+ trivia.unanswered +'</p>'+
@@ -137,7 +149,7 @@ $(document).ready(function(){
         trivia.correct++;
         clearInterval(trivia.timerId);
         resultId = setTimeout(trivia.guessResult, 1000 * 1);
-        $('#results').html('<h3> You guessed the correct Answer!</h3>');
+        $('#results').html('<h2> You guessed the correct Answer!</h2>');
       }
     
       else{
@@ -163,3 +175,4 @@ $(document).ready(function(){
     }
   
   }
+  

@@ -4,32 +4,54 @@ body{
     text-align: center;
     background: no-repeat center center fixed;
     background-size: cover;
-   
-    
     
 }
 
 h1 {
-	
-	font-size: 70px;
-	color: orange;
+	font-size: 50px;
+	color: blue;
     text-align: center;
-    height: 80;
+    padding-top: 80px;
     font-family: 'Pacifico', cursive;
-    font-family: 'Marck Script', cursive;
-    
+    font-family: 'Marck Script', cursive;  
+    font-weight: bold; 
+
 }
+h3{
+    font-size: 30%;
+    color: red;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 30px;
+    color: green;
+    font-family: 'Raleway', sans-serif;
+
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+
 .jumbotron-fluid{
     text-align: center;
     color: white;
     font-family: 'Roboto Slab', serif;
-    font-size: 40px;
+    font-size: 70px;
+    font-weight: bold;
     
 }
-option btn btn-outline-secondary{
+ .btn-outline-secondary{
     text-align: center;
-    font-size: 80px;
-    color: green;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
 }
